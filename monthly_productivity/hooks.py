@@ -5,19 +5,6 @@ app_description = "A custom app to add monthly_productivity to ERPNext 15"
 app_email = "i.daher@raiondigital.com"
 app_license = "mit"
 
-
-
-def after_install():
-    from frappe.utils.fixtures import import_doc
-
-    # Load your fixtures AFTER all apps are installed
-    import_doc("monthly_productivity", "fixtures/custom_field.json")
-    import_doc("monthly_productivity", "fixtures/client_script.json")
-    import_doc("monthly_productivity", "fixtures/report.json")
-    import_doc("monthly_productivity", "fixtures/doctype.json")
-
-
-
 # Apps
 # ------------------
 

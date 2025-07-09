@@ -3,7 +3,7 @@
     "report_name": "Monthly Productivity",
     "ref_doctype": "Monthly Productivity",
     "report_type": "Report Builder",
-    "is_standard": "No",
+    "is_standard": "Yes",
     "module": "Selling",
     "disabled": 0,
     "prepared_report": 0,
@@ -12,5 +12,6 @@
         {
             "role": "System Manager"
         }
-    ]
+    ],
+    "custom": 0
 }

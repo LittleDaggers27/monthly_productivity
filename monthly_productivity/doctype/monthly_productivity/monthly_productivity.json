@@ -2,7 +2,7 @@
     "doctype": "DocType",
     "name": "Monthly Productivity",
     "module": "Selling",
-    "custom": 1,
+    "custom": 0,
     "fields": [
         {
             "fieldname": "section_break_rfqc",
@@ -94,5 +94,6 @@
     "editable_grid": 0,
     "quick_entry": false,
     "track_changes": 1,
-    "track_views": 1
+    "track_views": 1,
+    "is_standard": "Yes"
 }

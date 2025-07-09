@@ -2,7 +2,7 @@
     "doctype": "DocType",
     "name": "Execution Schedule Entry",
     "module": "Selling",
-    "custom": 1,
+    "custom": 0,
     "fields": [
         {
             "fieldname": "execution_progress_section",
@@ -106,5 +106,6 @@
     "editable_grid": true,
     "quick_entry": 0,
     "track_changes": 1,
-    "track_views": 1
+    "track_views": 1,
+    "is_standard": "Yes"
 }
