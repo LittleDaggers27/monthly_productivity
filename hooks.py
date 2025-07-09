@@ -1,0 +1,6 @@
+app_name = 'monthly_productivity'
+app_title = 'Monthly Productivity'
+app_publisher = 'Custom'
+app_description = 'Track Monthly Productivity'
+app_email = 'support@example.com'
+app_license = 'MIT'

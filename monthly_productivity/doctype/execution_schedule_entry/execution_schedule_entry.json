@@ -1,0 +1,110 @@
+{
+    "doctype": "DocType",
+    "name": "Execution Schedule Entry",
+    "module": "Selling",
+    "custom": 1,
+    "fields": [
+        {
+            "fieldname": "execution_progress_section",
+            "fieldtype": "Section Break",
+            "label": "Execution Progress",
+            "reqd": 0,
+            "options": "",
+            "default": "",
+            "in_list_view": 0,
+            "in_standard_filter": 0,
+            "bold": 0,
+            "unique": 0
+        },
+        {
+            "fieldname": "sales_invoice",
+            "fieldtype": "Link",
+            "label": "Sales Invoice",
+            "reqd": 1,
+            "options": "Sales Invoice",
+            "default": "",
+            "in_list_view": 1,
+            "in_standard_filter": 0,
+            "bold": 0,
+            "unique": 0
+        },
+        {
+            "fieldname": "customer",
+            "fieldtype": "Data",
+            "label": "Customer",
+            "reqd": 0,
+            "options": "",
+            "default": "",
+            "in_list_view": 1,
+            "in_standard_filter": 0,
+            "bold": 0,
+            "unique": 0
+        },
+        {
+            "fieldname": "execution_percentage",
+            "fieldtype": "Percent",
+            "label": "Execution Percentage",
+            "reqd": 1,
+            "options": "",
+            "default": "",
+            "in_list_view": 1,
+            "in_standard_filter": 0,
+            "bold": 0,
+            "unique": 0
+        },
+        {
+            "fieldname": "cumulative_execution",
+            "fieldtype": "Percent",
+            "label": "Cumulative Execution %",
+            "reqd": 0,
+            "options": "",
+            "default": "",
+            "in_list_view": 1,
+            "in_standard_filter": 0,
+            "bold": 0,
+            "unique": 0
+        },
+        {
+            "fieldname": "invoice_total",
+            "fieldtype": "Currency",
+            "label": "Invoice Total",
+            "reqd": 0,
+            "options": "",
+            "default": "",
+            "in_list_view": 1,
+            "in_standard_filter": 0,
+            "bold": 0,
+            "unique": 0
+        },
+        {
+            "fieldname": "actual_executed_value",
+            "fieldtype": "Currency",
+            "label": "Actual Executed Value",
+            "reqd": 0,
+            "options": "",
+            "default": "",
+            "in_list_view": 1,
+            "in_standard_filter": 0,
+            "bold": 0,
+            "unique": 0
+        },
+        {
+            "fieldname": "delivery_status",
+            "fieldtype": "Select",
+            "label": "Delivery Status",
+            "reqd": 1,
+            "options": "Delivered\nNot Delivered\nNot Started Yet",
+            "default": "Not Delivered",
+            "in_list_view": 1,
+            "in_standard_filter": 0,
+            "bold": 0,
+            "unique": 0
+        }
+    ],
+    "istable": true,
+    "is_submittable": false,
+    "editable_grid": true,
+    "quick_entry": 0,
+    "track_changes": 1,
+    "track_views": 1
+}

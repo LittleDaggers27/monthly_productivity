@@ -1,0 +1,16 @@
+{
+    "doctype": "Report",
+    "report_name": "Monthly Productivity",
+    "ref_doctype": "Monthly Productivity",
+    "report_type": "Report Builder",
+    "is_standard": "No",
+    "module": "Selling",
+    "disabled": 0,
+    "prepared_report": 0,
+    "add_total_row": 0,
+    "roles": [
+        {
+            "role": "System Manager"
+        }
+    ]
+}

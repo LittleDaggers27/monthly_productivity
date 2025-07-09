@@ -1,0 +1,11 @@
+{
+    "app_name": "monthly_productivity",
+    "app_title": "Monthly Productivity",
+    "app_publisher": "Custom",
+    "app_description": "Track Monthly Productivity",
+    "app_icon": "octicon octicon-graph",
+    "app_color": "blue",
+    "app_email": "support@example.com",
+    "app_license": "MIT",
+    "app_version": "0.0.1"
+}
