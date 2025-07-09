@@ -5,6 +5,11 @@ app_description = "A custom app to add monthly_productivity to ERPNext 15"
 app_email = "i.daher@raiondigital.com"
 app_license = "mit"
 
+
+
+fixtures = ["Custom Field", "Client Script", "Report", "DocType"]
+
+
 # Apps
 # ------------------
 
