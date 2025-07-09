@@ -1,9 +1,10 @@
 {
-    "doctype": "Client Script",
-    "dt": "Monthly Productivity",
-    "script_type": "Form",
-    "enabled": 1,
-    "script": "\r\nfrappe.ui.form.on('Monthly Productivity', {\r\n  sales_invoice(frm) {\r\n    const inv = frm.doc.sales_invoice;\r\n    if (!inv) return;\r\n    frappe.db.get_value('Sales Invoice', inv, 'grand_total', r => {\r\n      const total = r.grand_total || 0;\r\n    \r\n      (frm.doc.execution_schedule_entries || []).forEach(row => {\r\n        frappe.model.set_value(row.doctype, row.name, 'invoice_total', total);\r\n        const actual = total * (row.execution_percentage || 0) / 100;\r\n        frappe.model.set_value(row.doctype, row.name, 'actual_executed_value', actual);\r\n      });\r\n    });\r\n  },\r\n  execution_schedule_entries_add(frm, cdt, cdn) {\r\n    const row = locals[cdt][cdn];\r\n    const inv = frm.doc.sales_invoice;\r\n    if (!inv) return;\r\n    frappe.db.get_value('Sales Invoice', inv, 'grand_total', r => {\r\n      frappe.model.set_value(cdt, cdn, 'sales_invoice', inv);\r\n      const total = r.grand_total || 0;\r\n      frappe.model.set_value(cdt, cdn, 'invoice_total', total);\r\n      const actual = total * (row.execution_percentage || 0) / 100;\r\n      frappe.model.set_value(cdt, cdn, 'actual_executed_value', actual);\r\n    });\r\n  }\r\n});\r\n\r\n\r\nfrappe.ui.form.on('Execution Schedule Entry', {\r\n  execution_percentage(frm, cdt, cdn) {\r\n    const row = locals[cdt][cdn];\r\n    const total = row.invoice_total || 0;\r\n    const actual = total * (row.execution_percentage || 0) / 100;\r\n    frappe.model.set_value(cdt, cdn, 'actual_executed_value', actual);\r\n  }\r\n});",
-    "custom": 0,
-    "is_standard": "Yes"
+  "name": "Monthly Productivity",
+  "doctype": "Client Script",
+  "dt": "Monthly Productivity",
+  "script_type": "Form",
+  "enabled": 1,
+  "script": "\r\nfrappe.ui.form.on('Monthly Productivity', {\r\n  sales_invoice(frm) {\r\n    const inv = frm.doc.sales_invoice;\r\n    if (!inv) return;\r\n    frappe.db.get_value('Sales Invoice', inv, 'grand_total', r => {\r\n      const total = r.grand_total || 0;\r\n    \r\n      (frm.doc.execution_schedule_entries || []).forEach(row => {\r\n        frappe.model.set_value(row.doctype, row.name, 'invoice_total', total);\r\n        const actual = total * (row.execution_percentage || 0) / 100;\r\n        frappe.model.set_value(row.doctype, row.name, 'actual_executed_value', actual);\r\n      });\r\n    });\r\n  },\r\n  execution_schedule_entries_add(frm, cdt, cdn) {\r\n    const row = locals[cdt][cdn];\r\n    const inv = frm.doc.sales_invoice;\r\n    if (!inv) return;\r\n    frappe.db.get_value('Sales Invoice', inv, 'grand_total', r => {\r\n      frappe.model.set_value(cdt, cdn, 'sales_invoice', inv);\r\n      const total = r.grand_total || 0;\r\n      frappe.model.set_value(cdt, cdn, 'invoice_total', total);\r\n      const actual = total * (row.execution_percentage || 0) / 100;\r\n      frappe.model.set_value(cdt, cdn, 'actual_executed_value', actual);\r\n    });\r\n  }\r\n});\r\n\r\n\r\nfrappe.ui.form.on('Execution Schedule Entry', {\r\n  execution_percentage(frm, cdt, cdn) {\r\n    const row = locals[cdt][cdn];\r\n    const total = row.invoice_total || 0;\r\n    const actual = total * (row.execution_percentage || 0) / 100;\r\n    frappe.model.set_value(cdt, cdn, 'actual_executed_value', actual);\r\n  }\r\n});",
+  "custom": 0,
+  "is_standard": "Yes"
 }
