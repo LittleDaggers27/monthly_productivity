@@ -1,5 +1,6 @@
 {
   "doctype": "Report",
+  "name": "Monthly Productivity Summary",
   "report_name": "Monthly Productivity Summary",
   "ref_doctype": "Monthly Productivity",
   "report_type": "Query Report",
