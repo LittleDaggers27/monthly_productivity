@@ -1,17 +1,17 @@
 {
-    "doctype": "Report",
-    "report_name": "Monthly Productivity",
-    "ref_doctype": "Monthly Productivity",
-    "report_type": "Report Builder",
-    "is_standard": "Yes",
-    "module": "Selling",
-    "disabled": 0,
-    "prepared_report": 0,
-    "add_total_row": 0,
-    "roles": [
-        {
-            "role": "System Manager"
-        }
-    ],
-    "custom": 0
+  "doctype": "Report",
+  "report_name": "Monthly Productivity",
+  "ref_doctype": "Monthly Productivity",
+  "report_type": "Report Builder",
+  "is_standard": "Yes",
+  "module": "Monthly Productivity",
+  "disabled": 0,
+  "prepared_report": 0,
+  "add_total_row": 0,
+  "roles": [
+    {
+      "role": "System Manager"
+    }
+  ],
+  "custom": 0
 }
